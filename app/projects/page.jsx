@@ -10,63 +10,77 @@ import Image from "next/image";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
+  
   {
     num:'01',
-    category:'frontend',
+    category:'MLOps',
     title:'project 1',
-    description:"Lorem ipsum dior amet",
+    description:"Vehicle Insurance Prediction : An AI-powered vehicle insurance prediction system",
     stack:[
       {
-        name:'Html 5'
+        name:'AWS'
       },
       {
-        name:'Css 3'
+        name:'Docker'
       },
       {
-        name:'JavaScript'
+        name:'MongoDB'
+      },
+      {
+        name:'Github Actions'
+      },
+      {
+        name:'FastAPI'
+      },
+      {
+        name:'Python'
       },
     ],
-    image:'/assets/work/thumb1.png',
-    live:'',
-    github:"",
+    image:'/assets/work/insurance-prediction-visual.png',
+    live:'http://3.95.248.33:5000/',
+    github:"https://github.com/udaygupta8899/Vehicle-Insurance-Prediction",
   },
+
   {
     num:'02',
-    category:'fullstack',
+    category:'generative AI',
     title:'project 2',
-    description:"Lorem ipsum dior amet",
+    description:"Web-Integrated Chatbot: Generative AI for Seamless Q&A and Information Retrieval",
     stack:[
       {
-        name:'Next.js'
+        name:'Python'
       },
       {
-        name:'Tailwind.css'
+        name:'Langchain'
       },
       {
-        name:'Node.js'
+        name:'Groq API'
       },
+      {
+        name:'Streamlit'
+      }
     ],
-    image:'/assets/work/thumb2.png',
-    live:'',
-    github:"",
+    image:'/assets/work/thumb1.png',
+    live:'https://chat-with-search-langchain.streamlit.app/',
+    github:"https://github.com/udaygupta8899/Chat-With-Search-Langchain/tree/main",
   },
-  {
-    num:'03',
-    category:'frontend',
-    title:'project 3',
-    description:"Lorem ipsum dior amet",
-    stack:[
-      {
-        name:'Next.js'
-      },
-      {
-        name:'Tailwind.css'
-      },
-    ],
-    image:'/assets/work/thumb3.png',
-    live:'',
-    github:"",
-  },
+  // {
+  //   num:'03',
+  //   category:'frontend',
+  //   title:'project 3',
+  //   description:"Lorem ipsum dior amet",
+  //   stack:[
+  //     {
+  //       name:'Next.js'
+  //     },
+  //     {
+  //       name:'Tailwind.css'
+  //     },
+  //   ],
+  //   image:'/assets/work/thumb3.png',
+  //   live:'',
+  //   github:"",
+  // },
 ];
 
 const Work = () => {
@@ -111,7 +125,7 @@ const Work = () => {
             {/* Buttons */}
             <div className="flex items-center gap-4">
               {/* Live Project Button */}
-              <Link href={project.live}>
+              <Link href={project.live} target="_blank" rel="noopener noreferrer">
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
                     <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -124,7 +138,7 @@ const Work = () => {
                 </TooltipProvider>
               </Link>
               {/* GitHub project button */}
-              <Link href={project.github}>
+              <Link href={project.github} target="_blank" rel="noopener noreferrer">
               <TooltipProvider delayDuration={100}>
                   <Tooltip>
                     <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">

@@ -1,5 +1,9 @@
 "use client";
-import {FaHtml5,FaCss3,FaJs,FaReact,FaFigma,FaNodeJs} from "react-icons/fa";
+import { FaJava, FaPython, FaCuttlefish, FaLaptopCode } from 'react-icons/fa';
+import { SiTensorflow, SiPytorch, SiScikitlearn,SiKeras } from 'react-icons/si';  // Import from 'react-icons/si'
+import { SiDvc, SiMlflow, SiDocker, SiAmazonaws } from "react-icons/si";
+import { SiGithub, SiFastapi, SiMongodb } from "react-icons/si";
+import { SiLangchain, SiStreamlit, SiGroq } from "react-icons/si";
 import {SiTailwindcss,SiNextdotjs} from "react-icons/si";
 import {Tabs,TabsContent,TabsList,TabsTrigger} from '@/components/ui/tabs';
 import { Tooltip,TooltipContent,TooltipProvider,TooltipTrigger } from "@/components/ui/tooltip";
@@ -9,7 +13,7 @@ import { motion } from "framer-motion";
 //About data
 const about = {
   title:'About me',
-  description: "Lorem ipsum dolor sit amet",
+  description: "Personal Details",
   info:[
     {
       fieldName:"Name",
@@ -18,10 +22,6 @@ const about = {
     {
       fieldName:"Phone",
       fieldValue:"(+91) 9051 683 219",
-    },
-    {
-      fieldName:"Experience",
-      fieldValue:"12+ Years",
     },
     {
       fieldName:"Nationality",
@@ -42,12 +42,12 @@ const about = {
 const experience = {
   icon:'/assets/resume/badge.svg',
   title: 'My Experience',
-  description: "Lorem ipsum dolor sit",
+  description: "",
   items: [
     {
-      company:"Tech Solutions Inc.",
-      position:"Full Stack Developer",
-      duration:"2025-Present"
+      company:"Computer Science Club MNIT",
+      position:"Technical Executive",
+      duration:"Sep 2024 - Present"
     },
   ]
 }
@@ -56,11 +56,11 @@ const experience = {
 const education = {
   icon:'/assets/resume/cap.svg',
   title: 'My Education',
-  description: "Lorem ipsum dolor sit",
+  description: "",
   items: [
     {
-      institution:"Malaviya National Institute of Technology Jaipur",
-      degree:"B.Tech",
+      institution:"Malaviya National Institute of Technology(MNIT) Jaipur",
+      degree:"Bachelor of Technology",
       duration:"2023-2027"
     },
   ]
@@ -69,27 +69,70 @@ const education = {
 //Skills data
 const skills = {
   title:"My Skills",
-  description:"Lorem ipsum dior",
   skillList:[
     {
-      icon:<FaHtml5 />,
-      name:"html-5",
+      icon:<FaJava />,
+      name:"Java",
     },
     {
-      icon:<FaHtml5 />,
-      name:"html-5",
+      icon:<FaPython/>,
+      name:"Python",
     },
     {
-      icon:<FaHtml5 />,
-      name:"html-5",
+      icon:<SiPytorch />,
+      name:"PyTorch",
     },
     {
-      icon:<FaHtml5 />,
-      name:"html-5",
+      icon:<SiScikitlearn />,
+      name:"Scikit-Learn"
     },
     {
-      icon:<FaHtml5 />,
-      name:"html-5",
+      icon:<SiKeras />,
+      name:"Keras"
+    },
+    {
+      icon:<SiTensorflow />,
+      name:"Tensorflow",
+    },
+    {
+      icon:<SiDvc />,
+      name:"DVC",
+    },
+    {
+      icon:<SiMlflow />,
+      name:"MLflow",
+    },
+    {
+      icon:<SiDocker />,
+      name:"Docker",
+    },
+    {
+      icon:<SiGithub />,
+      name:"GitHub",
+    },
+    {
+      icon:<SiFastapi />,
+      name:"FastAPI",
+    },
+    {
+      icon:<SiMongodb />,
+      name:"MongoDB",
+    },
+    {
+      icon:<SiLangchain />,
+      name:"Langchain",
+    },
+    {
+      icon:<SiStreamlit />,
+      name:"Streamlit",
+    },
+    {
+      icon: <img src="assets/c++.svg" alt="C++" style={{ width: "70px", height: "70px" }} />,  // Custom C++ logo
+      name: "C++",
+    },
+    {
+      icon:<FaCuttlefish />,
+      name:"C",
     },
   ]
 }
@@ -147,7 +190,7 @@ const Resume = () => {
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item,index)=>{
                       return (
-                      <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                      <li key={index} className="bg-[#232329] h-[230px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                         <span className="text-accent">{item.duration}</span>
                         <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
                         <div className="flex items-center gap-3">
