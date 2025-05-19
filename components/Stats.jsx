@@ -8,7 +8,7 @@ const stats = [
     suffix: "+", // Added suffix
   },
   {
-    num: 2,
+    num: 3,
     text: "Projects completed",
   },
   {
@@ -16,7 +16,7 @@ const stats = [
     text: "Programming Languages mastered",
   },
   {
-    num: 200,
+    num: 400,
     text: "Code commits",
     suffix: "+", // Added suffix
   },

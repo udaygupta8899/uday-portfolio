@@ -28,7 +28,7 @@ const Home = () => {
                 asChild
               >
                 <a
-                  href="https://drive.google.com/uc?export=download&id=1tlBoSivwZxHUFAASQhlEZxdC6Vott3S0"
+                  href="https://drive.google.com/file/d/1zgpkKkq8NIQLkfh2RZFlZC2-SvswoaMr/view?usp=sharing"
                   download
                   target="_blank"
                   rel="noopener noreferrer"
