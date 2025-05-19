@@ -10,11 +10,41 @@ import Image from "next/image";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
-  
+
   {
     num:'01',
     category:'MLOps',
     title:'project 1',
+    description:"Fake News Detection: A cutting-edge AI solution for identifying and combating misinformation",
+    stack:[
+      {
+        name:'AWS'
+      },
+      {
+        name:'Docker'
+      },
+      {
+        name:'Github Actions'
+      },
+      {
+        name:'Python'
+      },
+      {
+        name:'Prometheus'
+      },
+      {
+        name:'Grafana'
+      },
+    ],
+    image:'/assets/work/fake-news.png',
+    live:'',
+    github:"https://github.com/udaygupta8899/Vehicle-Insurance-Prediction",
+  },
+  
+  {
+    num:'02',
+    category:'MLOps',
+    title:'project 2',
     description:"Vehicle Insurance Prediction : An AI-powered vehicle insurance prediction system",
     stack:[
       {
@@ -37,14 +67,14 @@ const projects = [
       },
     ],
     image:'/assets/work/insurance-prediction-visual.png',
-    live:'http://3.95.248.33:5000/',
+    live:'',
     github:"https://github.com/udaygupta8899/Vehicle-Insurance-Prediction",
   },
 
   {
-    num:'02',
+    num:'03',
     category:'generative AI',
-    title:'project 2',
+    title:'project 3',
     description:"Web-Integrated Chatbot: Generative AI for Seamless Q&A and Information Retrieval",
     stack:[
       {
@@ -64,23 +94,6 @@ const projects = [
     live:'https://chat-with-search-langchain.streamlit.app/',
     github:"https://github.com/udaygupta8899/Chat-With-Search-Langchain/tree/main",
   },
-  // {
-  //   num:'03',
-  //   category:'frontend',
-  //   title:'project 3',
-  //   description:"Lorem ipsum dior amet",
-  //   stack:[
-  //     {
-  //       name:'Next.js'
-  //     },
-  //     {
-  //       name:'Tailwind.css'
-  //     },
-  //   ],
-  //   image:'/assets/work/thumb3.png',
-  //   live:'',
-  //   github:"",
-  // },
 ];
 
 const Work = () => {
